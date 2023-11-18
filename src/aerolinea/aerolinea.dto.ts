@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import {IsNotEmpty, IsString, IsDate, IsUrl} from 'class-validator';
+import {IsNotEmpty, IsString, IsUrl, IsDateString} from 'class-validator';
 export class AerolineaDto {
 
  @IsString()
@@ -10,9 +10,9 @@ export class AerolineaDto {
  @IsNotEmpty()
  readonly description: string;
  
- @IsDate()
+ @IsDateString()
  @IsNotEmpty()
- readonly foundationdate: Date;
+ readonly foundationDate: Date;
  
  @IsUrl()
  @IsNotEmpty()

@@ -36,7 +36,7 @@ describe('AerolineaService', () => {
         const airline: AerolineaEntity = await repository.save({
         name: faker.company.name(),
         description: faker.lorem.sentence(),
-        foundationdate: faker.date.past(),
+        foundationDate: faker.date.past(),
         webpage: faker.lorem.sentence()})
         airlinesList.push(airline);
     }
@@ -65,7 +65,7 @@ describe('AerolineaService', () => {
       id: "",
       name: faker.company.name(),
       description: faker.company.name(),
-      foundationdate: faker.date.past(),
+      foundationDate: faker.date.past(),
       webpage: faker.company.name(),
       airports: []
     }
